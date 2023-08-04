@@ -1,0 +1,13 @@
+.m {
+  position:relative; // parent should be postioned relative
+  padding-bottom: calc( (667/ 1000) * 100%); // calc ( img-height / img-width  * 100% ) => padding value in % 
+  border:solid 6px;
+  height:0;
+  overflow:hidden;
+}
+.m > img {
+  position:absolute; // image should be positioned absolute
+  inset:0;
+  height:100%;
+  aspet-ratio:1; // optional 
+}
